@@ -1,1 +1,6 @@
+# Python dependencies
+requests
 geopy
+
+# System dependencies (not installed via pip)
+# - python3-tk (for tkinter support)
