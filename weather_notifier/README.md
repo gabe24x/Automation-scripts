@@ -1,24 +1,29 @@
 # Weather Notifier
 
-## Setup and activate virtual environment :
-For Unix based systems please execute the following command to create venv and install requirements.
-```shell
-user@computer:~$ make init
-user@computer:~$ source .venv/bin/activate
-```
-
 ## Overview
 This is a simple weather notifier application that gathers weather information using the Meteomatics API. It includes a graphical user interface (GUI) built with tkinter to input city names, select running modes, and display weather data.
 
+## Setup and Installation
+To set up the virtual environment and install the required Python dependencies, execute the following commands:
+```shell
+make init
+source .venv/bin/activate
+```
+## System Dependencies
+This project requires tkinter (the python3-tk package) for the GUI.
 ## Usage
 Run the script using the command below:
 ```shell
-user@computer:~$ make run
+make run
 ```
 Alternatively, you can directly execute the Python script:
 ```shell
-user@computer:~$ python3 weather.py
+python3 weather_notifier.py
 ```
+
+## Dependencies
+* [GeoPy](https://geopy.readthedocs.io/en/stable/)
+* [Requests](https://requests.readthedocs.io/)
 
 ## Example Output
 When running the program, a GUI window will appear where you can:
@@ -26,5 +31,8 @@ When running the program, a GUI window will appear where you can:
 2. Choose a mode to either fetch data at fixed intervals or on command.
 3. View the weather information directly on the GUI.
 
-### Dependencies
-* [GeoPy](https://geopy.readthedocs.io/en/stable/)
+## Clean Up
+To remove the virtual environment and clean up the project directory, use:
+```shell
+make clean
+```
